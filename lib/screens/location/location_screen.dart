@@ -17,6 +17,7 @@ class LocationScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Location'),
+        backgroundColor: Theme.of(context).primaryColor,
       ),
       body: Center(
         child: ElevatedButton(

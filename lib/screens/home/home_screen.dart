@@ -17,13 +17,12 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home'),
+        backgroundColor: Theme.of(context).primaryColor,
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pushNamed(context, '/location');
-          },
-          child: const Text('Location Screen'),
+        child: Image.asset(
+          'assets/delivery.png',
+          height: 250,
         ),
       ),
     );
